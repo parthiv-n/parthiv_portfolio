@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useMemo, memo } from 'react';
 import { gsap } from 'gsap';
 import TextType from './TextType';
 import { SmoothCursor } from '@/components/lightswind/smooth-cursor';
@@ -6,12 +6,11 @@ import WalkingSprite from './WalkingSprite';
 
 const Portfolio = () => {
   // Available animals with their vertical positions (adjust these values)
+  // Reduced to 3 animals for performance (was 5)
   const animalConfig = {
     'Deer': { bottomPosition: -8 },
-    'Boar': { bottomPosition: -12 },
     'Fox': { bottomPosition: -12 },
     'Hare': { bottomPosition: -12 },
-    'Black_grouse': { bottomPosition: -16 },
   };
   
   const animals = Object.keys(animalConfig);
@@ -42,7 +41,8 @@ const Portfolio = () => {
   ];
 
   // Projects Data - Easy to edit and add new projects
-  const projects = [
+  // Memoized to prevent re-creation on every render
+  const projects = useMemo(() => [
 
     {
       id: 1,
@@ -195,10 +195,11 @@ As a baseline, a simple 3D U-Net can reach performance comparable to human agree
 
       ],
     }
-  ];
+  ], []);
 
   // Leadership Data - Easy to edit and add new leadership items
-  const leadershipItems = [
+  // Memoized to prevent re-creation on every render
+  const leadershipItems = useMemo(() => [
     {
       id: 1,
       title: 'Marketing Director',
@@ -243,7 +244,7 @@ As a baseline, a simple 3D U-Net can reach performance comparable to human agree
       placeholder: '[ UCL Muay Thai Club logo ]',
       images: ['/images/ucl_muaythai_logo.png'],
     },
-  ];
+  ], []);
 
   // Reset turtle position and clear selected project when section changes
   useEffect(() => {
@@ -385,6 +386,8 @@ As a baseline, a simple 3D U-Net can reach performance comparable to human agree
                                 src={image} 
                                 alt={`${selectedProject.title} - Image ${index + 1}`}
                                 className="w-full h-full object-cover"
+                                loading="lazy"
+                                decoding="async"
                               />
                             </div>
                           ))}
@@ -436,6 +439,8 @@ As a baseline, a simple 3D U-Net can reach performance comparable to human agree
                     src={selectedProject.thumbnail} 
                     alt={selectedProject.title}
                     className="w-full h-full object-cover"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
               )}
@@ -451,6 +456,7 @@ As a baseline, a simple 3D U-Net can reach performance comparable to human agree
                       frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
+                      loading="lazy"
                       className="absolute top-0 left-0 w-full h-full"
                     />
                   </div>
@@ -596,6 +602,8 @@ As a baseline, a simple 3D U-Net can reach performance comparable to human agree
                                 src={images[currentIndex]} 
                                 alt={item.title}
                                 className="w-full h-full object-contain rounded-full cursor-pointer"
+                                loading="lazy"
+                                decoding="async"
                                 onClick={(e) => {
                                   e.stopPropagation();
                                   setViewerImage(images[currentIndex]);
@@ -709,6 +717,8 @@ As a baseline, a simple 3D U-Net can reach performance comparable to human agree
                             src={project.thumbnail} 
                             alt={project.title}
                             className="w-full h-full object-cover"
+                            loading="lazy"
+                            decoding="async"
                           />
                         ) : (
                           <div className="absolute inset-0 flex items-center justify-center opacity-50 group-hover:opacity-100 transition-opacity">
@@ -933,6 +943,8 @@ As a baseline, a simple 3D U-Net can reach performance comparable to human agree
               ref={viewerImageRef}
               src={viewerImage} 
               alt="Full size view"
+              loading="lazy"
+              decoding="async"
               className={`max-w-full max-h-full object-contain cursor-move ${viewerImageCircular ? 'rounded-full border-4 border-white' : ''}`}
               style={{ 
                 transform: `scale(${zoomLevel})`,
