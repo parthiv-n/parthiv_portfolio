@@ -554,18 +554,18 @@ As a baseline, a simple 3D U-Net can reach performance comparable to human agree
         Hi, I'm Parthiv!
                   </p>
 
-                  <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed w-11/12  text-center">
+                  <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed w-11/12  text-left">
                   I'm interested in the intersection of design and creating AI tools, accessible to the everyday person.
                   </p>
 
-                  <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed w-11/12  text-center">
+                  <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed w-11/12  text-left">
                   I'm a 4th year MEng Biomedical Engineer at UCL in London. My degree is interdisciplinary, covering apspects of every engineering discipline all with a focus on healthcare.
                   In my coursework, I've build neural networks for detecting cancers, as well as even creating videogames and more!
                   Have a look at my projects for more info :)
                 
                   </p>
 
-                  <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed w-11/12  text-center">
+                  <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed w-11/12  text-left">
                   I enjoy solving user centered problems in healthtech and working at the intersection of people, data and product.
                   </p>
                 </div>
