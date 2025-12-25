@@ -570,9 +570,9 @@ As a baseline, a simple 3D U-Net can reach performance comparable to human agree
                 
                   </p>
 
-                  <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed w-11/12  text-left">
+                  {/* <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed w-11/12  text-left">
                   I enjoy solving user centered problems in healthtech and working at the intersection of people, data and product.
-                  </p>
+                  </p> */}
                 </div>
               )}
 
