@@ -85,7 +85,6 @@ Persistent user context is handled via SpoonOS Mem0 memory tools, enabling long-
       images: ['/images/pibblepay-slidecover.jpg','/images/pibblepay-webimage.jpg','/images/pibblepay-winning.jpg', ],
       demoLink: 'https://pibblepay.vercel.app/',
       githubLink: 'https://github.com/parthiv-n/pibblepay',
-      videoLink: 'https://www.youtube.com/watch?v=uIDGJ7ybDLo',
       videoLink: 'https://www.youtube.com/watch?v=uIDGJ7ybDLo'
     },
     {
