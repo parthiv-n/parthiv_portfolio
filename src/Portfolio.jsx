@@ -591,10 +591,10 @@ As a baseline, a simple 3D U-Net can reach performance comparable to human agree
                     return (
                       <div 
                         key={item.id}
-                        className="border-2 border-green-900 p-3 sm:p-4 bg-white shadow-[2px_2px_0px_0px_rgba(20,83,45,0.1)] hover:shadow-[4px_4px_0px_0px_rgba(20,83,45,0.2)] hover:border-green-700 hover:scale-[1.01] transition-all duration-300 aspect-[2/1] flex flex-col relative"
+                        className="border-2 border-green-900 p-3 sm:p-4 bg-white shadow-[2px_2px_0px_0px_rgba(20,83,45,0.1)] hover:shadow-[4px_4px_0px_0px_rgba(20,83,45,0.2)] hover:border-green-700 hover:scale-[1.01] transition-all duration-300 min-h-[120px] sm:aspect-[2/1] flex flex-col relative overflow-hidden"
                       >
                         {/* Logo Carousel - Top Left Profile Pic Style */}
-                        <div className="absolute top-3 left-3 w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0 z-10">
+                        <div className="absolute top-3 left-3 w-12 h-12 sm:w-20 sm:h-20 flex-shrink-0 z-10">
                           {images.length > 0 ? (
                             <div className="border-2 border-green-900 bg-stone-200 rounded-full relative group flex items-center justify-center p-1 overflow-hidden">
                               {/* Carousel Image */}
@@ -668,11 +668,11 @@ As a baseline, a simple 3D U-Net can reach performance comparable to human agree
                           )}
                         </div>
                         
-                      <div className="flex flex-col flex-1 gap-2 sm:gap-3 pl-20 sm:pl-24">
+                      <div className="flex flex-col flex-1 gap-2 sm:gap-3 pl-16 sm:pl-24">
                         {/* Content */}
                         <div className="flex-1 flex flex-col">
                           <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1 mb-1 sm:mb-2">
-                            <span className="text-lg sm:text-xl font-bold break-words">{item.title}</span>
+                            <span className="text-sm sm:text-xl font-bold break-words line-clamp-2">{item.title}</span>
                             <span className="text-xs font-mono text-right">{item.year}</span>
                           </div>
                           
@@ -680,7 +680,7 @@ As a baseline, a simple 3D U-Net can reach performance comparable to human agree
                             <p className="text-base sm:text-lg text-green-900/70 mb-2 font-bold">{item.organization}</p>
                           )}
                           
-                          <p className="text-xs sm:text-sm leading-relaxed font-[500] mb-2 flex-1">{item.description}</p>
+                          <p className="text-xs sm:text-sm leading-relaxed font-[500] mb-2 flex-1 line-clamp-3 sm:line-clamp-none">{item.description}</p>
                           
                           {item.details && (
                             <p className="text-xs leading-relaxed text-green-900/80">{item.details}</p>
