@@ -51,7 +51,7 @@ const Portfolio = () => {
       event: 'UCL 4th Year Final Project',
       skills: ['JavaScript', 'REST API','CAD','react', 'typescript'],
       description: 'A gamified rehabilitation device for stroke survivors. This is our final year project at UCL, and as a team of 6, we are aiming to redefine the status quo of physiotherapy.',
-      thumbnail: '/DXTR CAD.png',
+      thumbnail: '/DXTR-CAD.png',
       placeholder: '[ project_thumbnail_3.png ]',
       details: `**DXTR – Gamified Hand Rehabilitation Device**
 
@@ -59,7 +59,7 @@ DXTR is a handheld rehab device for stroke survivors who still have some volunta
 
 **My Role – UI & Game Layer**
 I am responsible for the web interface and mini-games. This includes designing the patient dashboard, implementing simple in-browser games driven by real-time sensor input, and building clinician views that visualize key rehab metrics. I will integrate the UI with the device’s local API so that sensor data becomes live feedback for patients and meaningful progress summaries for clinicians.`,
-      images: ['/DXTR CAD.png','/DXTR welcome.png','/DXTR patient dashboard.png','/DXTR clinician dashboard.png'],
+      images: ['/DXTR-CAD.png','/DXTR-welcome.png','/DXTR-patient-dashboard.png','/DXTR-clinician-dashboard.png'],
     },
     {
       id: 2,
@@ -68,7 +68,7 @@ I am responsible for the web interface and mini-games. This includes designing t
       event: 'SpoonOS x ElevenLabs Hackathon',
       skills: ['SpoonOS Core','SpoonOS Toolkit', 'NEO Blockchain', 'Python', 'ElevenLabs', 'gemini API', 'react'],
       description: 'An AI-powered, visual smart contract builder that lets non-technical freelancers create Neo smart contracts through chat and interactive blocks, powered by SpoonOS multi-agent workflows.',
-      thumbnail: '/images and content/pibblepaylogo.png',
+      thumbnail: '/images/pibblepaylogo.png',
       placeholder: '[ project_thumbnail.png ]',
       details: `Pibblepay is built as a graph-based multi-agent system using SpoonOS.
 A central StateGraph orchestrates specialised agents responsible for:
@@ -82,7 +82,7 @@ A central StateGraph orchestrates specialised agents responsible for:
 - Validating completeness and producing plain-English explanations
 
 Persistent user context is handled via SpoonOS Mem0 memory tools, enabling long-term memory across sessions. Audio output is integrated using the SpoonOS ElevenLabs TTS tool, ensuring native tool usage within the agent framework. The system cleanly separates user interaction, state management, and contract generation, resulting in a scalable, extensible architecture for non-technical Web3 creation.`,
-      images: ['/images and content/pibblepay slidecover.jpg','/images and content/pibblepay webimage.jpg','/images and content/pibblepay winning.jpg', ],
+      images: ['/images/pibblepay-slidecover.jpg','/images/pibblepay-webimage.jpg','/images/pibblepay-winning.jpg', ],
       demoLink: 'https://pibblepay.vercel.app/',
       githubLink: 'https://github.com/parthiv-n/pibblepay',
       videoLink: 'https://www.youtube.com/watch?v=uIDGJ7ybDLo',
@@ -95,7 +95,7 @@ Persistent user context is handled via SpoonOS Mem0 memory tools, enabling long-
       event: 'The Great Agent Hack',
       skills: ['Amazon Bedrock','LangGraph','Python','Bedrock SDK', 'react', 'typescript', 'tailwind CSS'],
       description:  'PharmaMiku is a multi-agent AI system built on Amazon Bedrock that delivers medically grounded health explanations with full decision traceability. The system offers security through observable agent trajectories and systematic red-team testing.',
-      thumbnail: '/images and content/pharmamiku cover.png',
+      thumbnail: '/images/pharmamiku-cover.png',
       placeholder: '[ project_thumbnail_2.png ]',
       details: `PharmaMiku is a glass-box, multi-agent AI assistant designed to safely explain medical and pharmaceutical information to users of all ages, from children to elderly patients.
 
@@ -123,7 +123,7 @@ Performs a final review of the user-facing response to catch unsafe phrasing or 
 Generates human-readable explanations of the agent's internal decision path, enabling auditability and failure analysis.
 
 All agent decisions, tool calls, and transformations are logged and visualized, enabling stakeholders to trace exactly why the system responded the way it did.`,
-      images: ['/images and content/pharmamiku cover.png', '/images and content/pharmamiku poster.jpg', '/images and content/pharmamiku demo pic.jpg', '/images and content/pharmamiku certificate.jpg', '/images and content/pharmamiku figdetspinner.jpg'],
+      images: ['/images/pharmamiku-cover.png', '/images/pharmamiku-poster.jpg', '/images/pharmamiku-demo-pic.jpg', '/images/pharmamiku-certificate.jpg', '/images/pharmamiku-figdetspinner.jpg'],
     },
     {
       id: 4,
@@ -132,7 +132,7 @@ All agent decisions, tool calls, and transformations are logged and visualized, 
       event: 'loveable x gemini workshop',
       skills: ['gemini API', 'react', 'REST API', 'typescript', 'tailwind CSS', 'supabase'],
       description: 'Weightcut Wizard is an AI-assisted training and nutrition system designed to help combat sport athletes manage weight cuts safely and effectively. The system combines sports-science–based calculations, structured data tracking, and an AI coaching layer to guide users through weight management without relying on extreme or unsafe practices.',
-      thumbnail: '/images and content/wizard logo.png',
+      thumbnail: '/images/wizard-logo.png',
       placeholder: '[ project_thumbnail_3.png ]',
       details: `Weightcut Wizard was built around real problems fighters deal with: unclear timelines, unrealistic targets, and not knowing whether a cut is on track until it's already gone wrong.
 
@@ -141,7 +141,7 @@ The system starts with simple inputs—current weight, target weight, fight date
 Instead of dumping raw numbers on the user, Weightcut Wizard uses an AI coaching layer to explain what's happening in plain language and suggest adjustments that actually make sense for someone in camp. Weight trends, hydration risk, and timeline pressure are visualised clearly, so fighters can see at a glance whether they're in a safe zone or pushing too hard.
 
 It's a straightforward tool meant to support smarter cuts, better preparation, and fewer bad surprises on the scale.`,
-      images: ['/images and content/wizard logo.png', '/images and content/wizard present.jpg', '/images and content/wizard dashboard.jpg', '/images and content/wizard mepresent.jpg', '/images and content/wizard mealprep.jpg', '/images and content/wizard nutrition.jpg', '/images and content/wizard fightweek.jpg'],
+      images: ['/images/wizard-logo.png', '/images/wizard-present.jpg', '/images/wizard-dashboard.jpg', '/images/wizard-mepresent.jpg', '/images/wizard-mealprep.jpg', '/images/wizard-nutrition.jpg', '/images/wizard-fightweek.jpg'],
     },
     {
       id: 5,
@@ -150,7 +150,7 @@ It's a straightforward tool meant to support smarter cuts, better preparation, a
       event: 'UCL 3rd Year Dissertation',
       skills: ['Python', 'PyTorch', 'MR Imaging', 'Segmentation', 'Dice Loss'],
       description: 'My dissertation: can an AI model highlight likely prostate cancer lesions on MRI to help clinicians read scans more consistently? I trained a baseline 3D U-Net on 851 UCL cases and evaluated where it helps (clearer tumours) and where it fails (subtle cases).',
-      thumbnail: '/images and content/prostateresult2.png',
+      thumbnail: '/images/prostateresult2.png',
       placeholder: '[ dissertation_cover.png ]',
       details: `
 I built a baseline AI model that segments prostate cancer lesions on prostate MRI scans. The goal of this model is to act like a consistent second opinion that could help with triage and reduce reader-to-reader variability.
@@ -187,12 +187,12 @@ Compare model segmentations against expert radiologist annotations.
 As a baseline, a simple 3D U-Net can reach performance comparable to human agreement in the “easier” cases. It’s promising for consistent triage/workflow support, but not a standalone diagnostic tool.`,
       demoLink: '/Final Report Final.pdf',
       images: [
-        //'/images and content/titlepicdis.png',
-        '/images and content/prostateresult.png',
-        '/images and content/disresults.png',
-        '/images and content/prostatezones.png',
-        '/images and content/prostateresult2.png',
-        '/images and content/unetarchitecture.png',
+        //'/images/titlepicdis.png',
+        '/images/prostateresult.png',
+        '/images/disresults.png',
+        '/images/prostatezones.png',
+        '/images/prostateresult2.png',
+        '/images/unetarchitecture.png',
 
       ],
     }
@@ -207,9 +207,9 @@ As a baseline, a simple 3D U-Net can reach performance comparable to human agree
       year: '2024 – 2025',
       description: 'Led marketing for 3,000+ members, secured £8,000+ in sponsorships from Qualcomm, Bloomberg, and Shell, and grew engagement by 20% through a full brand refresh.',
       details: '',
-      thumbnail: '/images and content/ucl_eng_society_logo.png',
+      thumbnail: '/images/ucl_eng_society_logo.png',
       placeholder: '[ UCL Engineering Society logo ]',
-      images: ['/images and content/ucl_eng_society_logo.png'],
+      images: ['/images/ucl_eng_society_logo.png'],
     },
     {
       id: 2,
@@ -218,9 +218,9 @@ As a baseline, a simple 3D U-Net can reach performance comparable to human agree
       year: '2023 – 2024',
       description: 'Refounded the society with a peer after a period of inactivity, rebuilt its committee, and grew membership from 0 to 50+ within one year through targeted outreach and events.',
       details: '',
-      thumbnail: '/images and content/ucl_surgery_society_logo.png',
+      thumbnail: '/images/ucl_surgery_society_logo.png',
       placeholder: '[ UCL Surgery and Interventional Science Society logo ]',
-      images: ['/images and content/ucl_surgery_society_logo.png'],
+      images: ['/images/ucl_surgery_society_logo.png'],
     },
     {
       id: 3,
@@ -229,9 +229,9 @@ As a baseline, a simple 3D U-Net can reach performance comparable to human agree
       year: '2025 – 2026',
       description: 'Promoted member wellbeing by supporting inclusion, managing welfare initiatives, and helping maintain a positive club culture.',
       details: '',
-      thumbnail: '/images and content/ucl_muaythai_logo.png',
+      thumbnail: '/images/ucl_muaythai_logo.png',
       placeholder: '[ UCL Muay Thai Club logo ]',
-      images: ['/images and content/ucl_muaythai_logo.png'],
+      images: ['/images/ucl_muaythai_logo.png'],
     },
     {
       id: 4,
@@ -240,9 +240,9 @@ As a baseline, a simple 3D U-Net can reach performance comparable to human agree
       year: '2024 – 2025',
       description: 'Oversaw club equipment management and logistics, ensuring safety and readiness for all training sessions and competitions.',
       details: '',
-      thumbnail: '/images and content/ucl_muaythai_logo.png',
+      thumbnail: '/images/ucl_muaythai_logo.png',
       placeholder: '[ UCL Muay Thai Club logo ]',
-      images: ['/images and content/ucl_muaythai_logo.png'],
+      images: ['/images/ucl_muaythai_logo.png'],
     },
   ];
 
