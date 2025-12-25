@@ -1,0 +1,23 @@
+.text-type {
+  display: inline-block;
+  white-space: pre-wrap;
+}
+
+.text-type__cursor {
+  margin-left: 0.25rem;
+  display: inline-block;
+  opacity: 1;
+  vertical-align: middle;
+  position: relative;
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+.text-type__cursor img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.text-type__cursor--hidden {
+  display: none;
+}
+
