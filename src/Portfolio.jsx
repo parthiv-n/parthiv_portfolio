@@ -763,7 +763,7 @@ As a baseline, a simple 3D U-Net can reach performance comparable to human agree
                   key={item.id}
                   onClick={() => setActiveSection(item.id)}
                   className={`
-                    text-left px-3 sm:px-4 py-2.5 sm:py-3 border-2 transition-all duration-300 lowercase text-base sm:text-lg font-medium whitespace-nowrap min-w-[120px] sm:min-w-0 touch-manipulation
+                    text-left px-2 sm:px-4 py-2 sm:py-3 border-2 transition-all duration-300 lowercase text-xs sm:text-lg font-medium whitespace-nowrap sm:whitespace-normal flex-shrink-0 touch-manipulation
                     ${activeSection === item.id 
                       ? 'bg-green-900 text-[#fdfbf7] border-green-900 sm:translate-x-2 shadow-[-2px_2px_0px_0px_rgba(0,0,0,0.1)] sm:shadow-[-4px_4px_0px_0px_rgba(0,0,0,0.1)]' 
                       : 'bg-transparent border-green-900 active:bg-green-100 sm:hover:bg-green-100 sm:hover:translate-x-1 text-green-950'}
